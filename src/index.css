@@ -1,0 +1,433 @@
+
+/**
+ * FixedDataTable v0.6.4 
+ *
+ * Copyright (c) 2015, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+/**
+ * Copyright (c) 2015, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule fixedDataTable
+ *
+ */
+
+/**
+ * Table.
+ */
+.public_fixedDataTable_main {
+  border-color: #d3d3d3;
+}
+
+.public_fixedDataTable_header,
+.public_fixedDataTable_hasBottomBorder {
+  border-color: #d3d3d3;
+}
+
+.public_fixedDataTable_header .public_fixedDataTableCell_main {
+  font-weight: bold;
+}
+
+.public_fixedDataTable_header,
+.public_fixedDataTable_header .public_fixedDataTableCell_main {
+  background-color: #f6f7f8;
+  background-image: linear-gradient(#fff, #efefef);
+}
+
+.public_fixedDataTable_footer .public_fixedDataTableCell_main {
+  background-color: #f6f7f8;
+  border-color: #d3d3d3;
+}
+
+.public_fixedDataTable_topShadow {
+  background: 0 0 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAF0lEQVR4AWPUkNeSBhHCjJoK2twgFisAFagCCp3pJlAAAAAASUVORK5CYII=) repeat-x;
+}
+
+.public_fixedDataTable_bottomShadow {
+  background: 0 0 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAHElEQVQI12MwNjZmZdAT1+Nm0JDWEGZQk1GTBgAWkwIeAEp52AAAAABJRU5ErkJggg==) repeat-x;
+}
+
+.public_fixedDataTable_horizontalScrollbar .public_Scrollbar_mainHorizontal {
+  background-color: #fff;
+}
+/**
+ * Copyright (c) 2015, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule fixedDataTableCell
+ */
+
+/**
+ * Table cell.
+ */
+.public_fixedDataTableCell_main {
+  background-color: #fff;
+  border-color: #d3d3d3;
+}
+
+.public_fixedDataTableCell_highlighted {
+  background-color: #f4f4f4;
+}
+
+.public_fixedDataTableCell_cellContent {
+  padding: 8px;
+}
+
+.public_fixedDataTableCell_columnResizerKnob {
+  background-color: #0284ff;
+}
+/**
+ * Copyright (c) 2015, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule fixedDataTableColumnResizerLine
+ *
+ */
+
+/**
+ * Column resizer line.
+ */
+.public_fixedDataTableColumnResizerLine_main {
+  border-color: #0284ff;
+}
+/**
+ * Copyright (c) 2015, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule fixedDataTableRow
+ */
+
+/**
+ * Table row.
+ */
+.public_fixedDataTableRow_main {
+  background-color: #fff;
+}
+
+.public_fixedDataTableRow_highlighted,
+.public_fixedDataTableRow_highlighted .public_fixedDataTableCell_main {
+  background-color: #f6f7f8;
+}
+
+.public_fixedDataTableRow_fixedColumnsDivider {
+  border-color: #d3d3d3;
+}
+
+.public_fixedDataTableRow_columnsShadow {
+  background: 0 0 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAAFklEQVQIHWPSkNeSBmJhTQVtbiDNCgASagIIuJX8OgAAAABJRU5ErkJggg==) repeat-y;
+}
+/**
+ * Copyright (c) 2015, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule Scrollbar
+ *
+ */
+
+/**
+ * Scrollbars.
+ */
+
+/* Touching the scroll-track directly makes the scroll-track bolder */
+.public_Scrollbar_main.public_Scrollbar_mainActive,
+.public_Scrollbar_main:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.public_Scrollbar_mainOpaque,
+.public_Scrollbar_mainOpaque.public_Scrollbar_mainActive,
+.public_Scrollbar_mainOpaque:hover {
+  background-color: #fff;
+}
+
+.public_Scrollbar_face:after {
+  background-color: #c2c2c2;
+}
+
+.public_Scrollbar_main:hover .public_Scrollbar_face:after,
+.public_Scrollbar_mainActive .public_Scrollbar_face:after,
+.public_Scrollbar_faceActive:after {
+  background-color: #7d7d7d;
+}
+
+
+/**
+ * FixedDataTable v0.6.4 
+ *
+ * Copyright (c) 2015, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+.exampleImage{
+    background: #efefef;
+    background-size: 100%;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.giantImage{
+  width: 450px;
+  height: 450px;
+}
+
+.imageSection{
+  position: fixed;
+  top: 52px;
+  z-index: 10px;
+  right: 10px;
+  width: 450px;
+  height: 450px;
+}
+
+.giantImageModal{
+  width: 450px;
+  height: 450px;
+}
+
+.imageSectionModal{
+  width: 450px;
+  margin: auto;
+}
+
+.boton-descontar{
+  float: right;
+}
+
+.fixedDataTableCellGroupLayout_cellGroup{-webkit-backface-visibility:hidden;backface-visibility:hidden;left:0;overflow:hidden;position:absolute;top:0;white-space:nowrap}.fixedDataTableCellGroupLayout_cellGroup>.public_fixedDataTableCell_main{display:inline-block;vertical-align:top;white-space:normal}.fixedDataTableCellGroupLayout_cellGroupWrapper{position:absolute;top:0}.fixedDataTableCellLayout_main{border-right-style:solid;border-width:0 1px 0 0;box-sizing:border-box;display:block;overflow:hidden;position:absolute;white-space:normal}.fixedDataTableCellLayout_lastChild{border-width:0 1px 1px 0}.fixedDataTableCellLayout_alignRight{text-align:right}.fixedDataTableCellLayout_alignCenter{text-align:center}.fixedDataTableCellLayout_wrap1{display:table}.fixedDataTableCellLayout_wrap2{display:table-row}.fixedDataTableCellLayout_wrap3{display:table-cell;vertical-align:middle}.fixedDataTableCellLayout_columnResizerContainer{position:absolute;right:0;width:6px;z-index:1}.fixedDataTableCellLayout_columnResizerContainer:hover{cursor:ew-resize}.fixedDataTableCellLayout_columnResizerContainer:hover .fixedDataTableCellLayout_columnResizerKnob{visibility:visible}.fixedDataTableCellLayout_columnResizerKnob{position:absolute;right:0;visibility:hidden;width:4px}.fixedDataTableColumnResizerLineLayout_mouseArea{cursor:ew-resize;position:absolute;right:-5px;width:12px}.fixedDataTableColumnResizerLineLayout_main{border-right-style:solid;border-right-width:1px;box-sizing:border-box;position:absolute;z-index:10}body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main,.fixedDataTableColumnResizerLineLayout_hiddenElem{display:none!important}.fixedDataTableLayout_main{border-style:solid;border-width:1px;box-sizing:border-box;overflow:hidden;position:relative}.fixedDataTableLayout_header,.fixedDataTableLayout_hasBottomBorder{border-bottom-style:solid;border-bottom-width:1px}.fixedDataTableLayout_footer .public_fixedDataTableCell_main{border-top-style:solid;border-top-width:1px}.fixedDataTableLayout_topShadow,.fixedDataTableLayout_bottomShadow{height:4px;left:0;position:absolute;right:0;z-index:1}.fixedDataTableLayout_bottomShadow{margin-top:-4px}.fixedDataTableLayout_rowsContainer{overflow:hidden;position:relative}.fixedDataTableLayout_horizontalScrollbar{bottom:0;position:absolute}.fixedDataTableRowLayout_main{box-sizing:border-box;overflow:hidden;position:absolute;top:0}.fixedDataTableRowLayout_body{left:0;position:absolute;top:0}.fixedDataTableRowLayout_fixedColumnsDivider{-webkit-backface-visibility:hidden;backface-visibility:hidden;border-left-style:solid;border-left-width:1px;left:0;position:absolute;top:0;width:0}.fixedDataTableRowLayout_columnsShadow{width:4px}.fixedDataTableRowLayout_rowWrapper{position:absolute;top:0}.ScrollbarLayout_main{box-sizing:border-box;outline:none;overflow:hidden;position:absolute;transition-duration:250ms;transition-timing-function:ease;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ScrollbarLayout_mainVertical{bottom:0;right:0;top:0;transition-property:background-color width;width:15px}.ScrollbarLayout_mainVertical.public_Scrollbar_mainActive,.ScrollbarLayout_mainVertical:hover{width:17px}.ScrollbarLayout_mainHorizontal{bottom:0;height:15px;left:0;transition-property:background-color height}.ScrollbarLayout_mainHorizontal.public_Scrollbar_mainActive,.ScrollbarLayout_mainHorizontal:hover{height:17px}.ScrollbarLayout_face{left:0;overflow:hidden;position:absolute;z-index:1}.ScrollbarLayout_face:after{border-radius:6px;content:'';display:block;position:absolute;transition:background-color 250ms ease}.ScrollbarLayout_faceHorizontal{bottom:0;left:0;top:0}.ScrollbarLayout_faceHorizontal:after{bottom:4px;left:0;top:4px;width:100%}.ScrollbarLayout_faceVertical{left:0;right:0;top:0}.ScrollbarLayout_faceVertical:after{height:100%;left:4px;right:4px;top:0}
+
+
+
+
+
+.miniImage{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.main .row{
+  padding: 0px;
+  margin: 0px;
+}
+
+/*Remove rounded coners*/
+
+nav.sidebar.navbar {
+  border-radius: 0px;
+  margin-right: 10px;
+}
+
+
+/* Add gap to nav and right windows.*/
+.main{
+  padding: 10px 10px 0 10px;
+}
+
+/* .....NavBar: Icon only with coloring/layout.....*/
+
+/*small/medium side display*/
+@media (min-width: 768px) {
+
+  /*Allow main to be next to Nav*/
+  .main{
+    position: absolute;
+    width: calc(100% - 40px); /*keeps 100% minus nav size*/
+    margin-left: 40px;
+    float: right;
+  }
+
+  /*Center Brand*/
+  nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+  }
+  /*Center Brand*/
+  nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  /*Center Icons*/
+  nav.sidebar a{
+    padding-right: 13px;
+  }
+
+  /*adds border top to first nav box */
+  nav.sidebar .navbar-nav > li:first-child{
+    border-top: 1px #e5e5e5 solid;
+  }
+
+  /*adds border to bottom nav boxes*/
+  nav.sidebar .navbar-nav > li{
+    border-bottom: 1px #e5e5e5 solid;
+  }
+
+  /* Colors/style dropdown box*/
+  nav.sidebar .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /*allows nav box to use 100% width*/
+  nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+    padding: 0 0px 0 0px;
+  }
+
+  /*colors dropdown box text */
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #777;
+  }
+
+  /*gives sidebar width/height*/
+  nav.sidebar{
+    width: 200px;
+    height: 100%;
+    margin-left: -160px;
+    float: left;
+    z-index: 8000;
+    margin-bottom: 0px;
+  }
+
+  /*give sidebar 100% width;*/
+  nav.sidebar li {
+    width: 100%;
+  }
+
+  /* Move nav to full on mouse over*/
+  /*for hiden things when navbar hidden*/
+  .forAnimate{
+    opacity: 0;
+  }
+}
+
+/* .....NavBar: Fully showing nav bar..... */
+
+@media (min-width: 1330px) {
+
+  /*Allow main to be next to Nav*/
+  .main{
+    width: calc(100% - 200px); /*keeps 100% minus nav size*/
+    margin-left: 200px;
+  }
+
+  /*Show all nav*/
+  nav.sidebar{
+    margin-left: 0px;
+    float: left;
+  }
+  /*Show hidden items on nav*/
+  nav.sidebar .forAnimate{
+    opacity: 1;
+  }
+}
+
+section{
+  padding-left: 15px;
+}
+
+.center-table{
+  width: 300px;
+  margin: auto;
+}
+
+.side-nav{
+  float: left;
+  margin-right: 10px;
+}
+
+.search-table{
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+
+.screen {
+  font-size: 0.5em;
+  margin: 0;
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.screen .main {
+  width: 100%;
+  height: 100%;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left
+}
+
+.infoSection {
+  margin-top: 30px;
+  margin-left: 13px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #656565
+}
+
+.infoSection span{
+  font-size: 24px;
+  font-weight: 600;
+  color: black 
+}
+
+img {
+  background-color: url("https://st.depositphotos.com/1005920/2475/i/110/depositphotos_24751385-stock-photo-question-mark-blue-circle-web.jpg");
+  overflow: hidden;
+}
+
+img:before {
+  content: " ";
+  font-size: 1000px;
+}
